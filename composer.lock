@@ -1,0 +1,561 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "a933656a9b2eaa813741db96c5959205",
+    "packages": [
+        {
+            "name": "adapta/modcustomfields",
+            "version": "6",
+            "source": {
+                "type": "git",
+                "url": "https://gitlab.com/adapta/moodle-local_modcustomfields.git",
+                "reference": "6"
+            },
+            "require": {
+                "composer/installers": "~2.2",
+                "moodle/moodle": "v4.*"
+            },
+            "type": "moodle-local"
+        },
+        {
+            "name": "andrewhancox/file",
+            "version": "dev-composer-file",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bytesparrow/moodle-customfield_file.git",
+                "reference": "075d43b8fe9f348579d703a5aaa73334cc4152c4"
+            },
+            "require": {
+                "composer/installers": "~2.2",
+                "moodle/moodle": "v4.*"
+            },
+            "type": "moodle-customfield",
+            "license": [
+                "GPL-3.0-or-later"
+            ],
+            "description": "A custom field to attach files to entities in Moodle",
+            "time": "2024-04-24T10:51:04+00:00"
+        },
+        {
+            "name": "bytesparrow/contentmodifier",
+            "version": "v1.0-alpha3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bytesparrow/moodle-theme_contentmodifier.git",
+                "reference": "630be82f4e6c0629106dfa36f12cd472f22ab1c8"
+            },
+            "require": {
+                "composer/installers": "~2.2",
+                "moodle/moodle": "v4.*",
+                "php": "^7.4 || ^8.0"
+            },
+            "type": "moodle-theme",
+            "license": [
+                "GPLv3"
+            ],
+            "authors": [
+                {
+                    "name": "Bernhard Strehl"
+                }
+            ],
+            "description": "A theme that enables other themes or plugin to modify moodle's html-output and gives modules the possibility to override renderers.",
+            "keywords": [
+                "html",
+                "moodle",
+                "theme"
+            ],
+            "time": "2024-04-17T13:02:51+00:00"
+        },
+        {
+            "name": "bytesparrow/h5peventsystem",
+            "version": "v1.0-alpha3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bytesparrow/moodle-theme_h5peventsystem.git",
+                "reference": "848d1855c82bb9c7a08c83a9b5e742ee4b79bf9a"
+            },
+            "require": {
+                "composer/installers": "~2.2",
+                "moodle/moodle": "v4.*",
+                "php": "^7.4 || ^8.0"
+            },
+            "type": "moodle-theme",
+            "license": [
+                "GPLv3"
+            ],
+            "authors": [
+                {
+                    "name": "Bernhard Strehl",
+                    "email": "moodle@bytesparrow.de",
+                    "homepage": "https://www.bytesparrow.de",
+                    "role": "Developer"
+                }
+            ],
+            "description": "H5PEventSystem is a theme that provides the possibility to attach events to h5p-content",
+            "keywords": [
+                "html",
+                "moodle",
+                "theme"
+            ],
+            "support": {
+                "email": "moodle@bytesparrow.de"
+            },
+            "time": "2024-04-17T13:12:05+00:00"
+        },
+        {
+            "name": "bytesparrow/moodle-composer-base",
+            "version": "v1.0-alpha2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bytesparrow/moodle-composer-base.git",
+                "reference": "8961cd1e61364c5b52c5f5e78efc2265fd5b3129"
+            },
+            "require": {
+                "composer-plugin-api": "^2",
+                "composer/installers": "^2",
+                "moodle/moodle": "v4.3"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "bytesparrow\\MoodleComposerBase",
+                "keepfiles": [
+                    "config.php"
+                ],
+                "installer-paths": {
+                    "vendor/moodle/moodle/theme/{$name}": [
+                        "type:moodle-theme"
+                    ],
+                    "vendor/moodle/moodle/local/{$name}": [
+                        "type:moodle-local"
+                    ],
+                    "vendor/moodle/moodle/customfield/field/{$name}": [
+                        "type:moodle-customfield"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "bytesparrow\\": "src"
+                }
+            },
+            "scripts": {
+                "pre-install-cmd": [
+                    "bytesparrow\\MoodleComposerBase::preInstall"
+                ],
+                "pre-update-cmd": [
+                    "bytesparrow\\MoodleComposerBase::preUpdate"
+                ],
+                "post-update-cmd": [
+                    "bytesparrow\\MoodleComposerBase::postUpdate"
+                ],
+                "post-install-cmd": [
+                    "bytesparrow\\MoodleComposerBase::postInstall"
+                ]
+            },
+            "license": [
+                "GPLv3"
+            ],
+            "authors": [
+                {
+                    "name": "Bernhard Strehl",
+                    "email": "moodle@bytesparrow.de",
+                    "homepage": "https://www.bytesparrow.de",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A composer plugin to ease the maintenance and installation of Moodle.",
+            "keywords": [
+                "composer",
+                "moodle"
+            ],
+            "time": "2024-04-22T14:32:19+00:00"
+        },
+        {
+            "name": "bytesparrow/nos",
+            "version": "v1.0-alpha3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bytesparrow/moodle-theme_nos.git",
+                "reference": "58ec7dfc64b501702338429fa07c946266601af3"
+            },
+            "require": {
+                "bytesparrow/contentmodifier": "v1.*",
+                "bytesparrow/h5peventsystem": "v1.*",
+                "composer/installers": "~2.2",
+                "moodle/moodle": "v4.*"
+            },
+            "type": "moodle-theme",
+            "license": [
+                "GPLv3"
+            ],
+            "authors": [
+                {
+                    "name": "Bernhard Strehl",
+                    "email": "moodle@bytesparrow.de",
+                    "homepage": "https://www.bytesparrow.de",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A theme for ml.",
+            "keywords": [
+                "moodle",
+                "theme"
+            ],
+            "time": "2024-04-17T13:22:28+00:00"
+        },
+        {
+            "name": "bytesparrow/pdffieldrenderer",
+            "version": "v1.0-alpha4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bytesparrow/moodle-local_pdffieldrenderer.git",
+                "reference": "2dba639cb6b0adf90173f96d500dd65615352fba"
+            },
+            "require": {
+                "composer/installers": "~2.2",
+                "php": "^7.4 || ^8.0"
+            },
+            "type": "moodle-local",
+            "license": [
+                "GPLv3"
+            ],
+            "authors": [
+                {
+                    "name": "Bernhard Strehl",
+                    "email": "moodle@bytesparrow.de",
+                    "homepage": "https://www.bytesparrow.de",
+                    "role": "Developer"
+                }
+            ],
+            "description": "This plugin can render and display an uploaded PDF-file within Moodle",
+            "keywords": [
+                "custom field",
+                "moodle",
+                "pdf",
+                "pdfjs"
+            ],
+            "support": {
+                "email": "moodle@bytesparrow.de"
+            },
+            "time": "2024-04-22T14:39:19+00:00"
+        },
+        {
+            "name": "bytesparrow/pdfjsrenderer",
+            "version": "v1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bytesparrow/moodle-local_pdfjsrenderer.git",
+                "reference": "ff5820fcfe5a31d35075eafdd0c10807744e9229"
+            },
+            "require": {
+                "composer/installers": "~2.2",
+                "moodle/moodle": "v4.*",
+                "php": "^7.4 || ^8.0"
+            },
+            "type": "moodle-local",
+            "license": [
+                "GPLv3"
+            ],
+            "authors": [
+                {
+                    "name": "Bernhard Strehl",
+                    "email": "moodle@bytesparrow.de",
+                    "homepage": "https://www.bytesparrow.de",
+                    "role": "Developer"
+                }
+            ],
+            "description": "This is an JS-API-Plugin. It does nothing by itself. It's used for rendering PDFs",
+            "keywords": [
+                "api",
+                "moodle",
+                "pdf",
+                "pdfjs"
+            ],
+            "time": "2024-04-22T14:35:01+00:00"
+        },
+        {
+            "name": "bytesparrow/zmulticontentrendering",
+            "version": "v1.0-alpha1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bytesparrow/moodle-local_zmulticontentrendering.git",
+                "reference": "405a610475d96ad50e747f25dbc4f7bb16aafada"
+            },
+            "require": {
+                "composer/installers": "~2.2",
+                "php": "^7.4 || ^8.0"
+            },
+            "type": "moodle-local",
+            "license": [
+                "GPLv3"
+            ],
+            "authors": [
+                {
+                    "name": "Bernhard Strehl",
+                    "email": "moodle@bytesparrow.de",
+                    "homepage": "https://www.bytesparrow.de",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Using (and editing) this plugin you can re-order the content if using custom fields for enhancing your content",
+            "keywords": [
+                "h5p",
+                "moodle",
+                "multi content",
+                "pdf",
+                "render"
+            ],
+            "support": {
+                "email": "moodle@bytesparrow.de"
+            },
+            "time": "2024-04-22T13:01:10+00:00"
+        },
+        {
+            "name": "composer/installers",
+            "version": "v2.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/composer/installers.git",
+                "reference": "c29dc4b93137acb82734f672c37e029dfbd95b35"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/composer/installers/zipball/c29dc4b93137acb82734f672c37e029dfbd95b35",
+                "reference": "c29dc4b93137acb82734f672c37e029dfbd95b35",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^1.0 || ^2.0",
+                "php": "^7.2 || ^8.0"
+            },
+            "require-dev": {
+                "composer/composer": "1.6.* || ^2.0",
+                "composer/semver": "^1 || ^3",
+                "phpstan/phpstan": "^0.12.55",
+                "phpstan/phpstan-phpunit": "^0.12.16",
+                "symfony/phpunit-bridge": "^5.3",
+                "symfony/process": "^5"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "Composer\\Installers\\Plugin",
+                "branch-alias": {
+                    "dev-main": "2.x-dev"
+                },
+                "plugin-modifies-install-path": true
+            },
+            "autoload": {
+                "psr-4": {
+                    "Composer\\Installers\\": "src/Composer/Installers"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kyle Robinson Young",
+                    "email": "kyle@dontkry.com",
+                    "homepage": "https://github.com/shama"
+                }
+            ],
+            "description": "A multi-framework Composer library installer",
+            "homepage": "https://composer.github.io/installers/",
+            "keywords": [
+                "Dolibarr",
+                "Eliasis",
+                "Hurad",
+                "ImageCMS",
+                "Kanboard",
+                "Lan Management System",
+                "MODX Evo",
+                "MantisBT",
+                "Mautic",
+                "Maya",
+                "OXID",
+                "Plentymarkets",
+                "Porto",
+                "RadPHP",
+                "SMF",
+                "Starbug",
+                "Thelia",
+                "Whmcs",
+                "WolfCMS",
+                "agl",
+                "annotatecms",
+                "attogram",
+                "bitrix",
+                "cakephp",
+                "chef",
+                "cockpit",
+                "codeigniter",
+                "concrete5",
+                "croogo",
+                "dokuwiki",
+                "drupal",
+                "eZ Platform",
+                "elgg",
+                "expressionengine",
+                "fuelphp",
+                "grav",
+                "installer",
+                "itop",
+                "known",
+                "kohana",
+                "laravel",
+                "lavalite",
+                "lithium",
+                "magento",
+                "majima",
+                "mako",
+                "matomo",
+                "mediawiki",
+                "miaoxing",
+                "modulework",
+                "modx",
+                "moodle",
+                "osclass",
+                "pantheon",
+                "phpbb",
+                "piwik",
+                "ppi",
+                "processwire",
+                "puppet",
+                "pxcms",
+                "reindex",
+                "roundcube",
+                "shopware",
+                "silverstripe",
+                "sydes",
+                "sylius",
+                "tastyigniter",
+                "wordpress",
+                "yawik",
+                "zend",
+                "zikula"
+            ],
+            "support": {
+                "issues": "https://github.com/composer/installers/issues",
+                "source": "https://github.com/composer/installers/tree/v2.2.0"
+            },
+            "funding": [
+                {
+                    "url": "https://packagist.com",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/composer",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/composer/composer",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2022-08-20T06:45:11+00:00"
+        },
+        {
+            "name": "moodle-an-hochschulen/boost_union",
+            "version": "v4.1.24",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/moodle-an-hochschulen/moodle-theme_boost_union.git",
+                "reference": "tags/v4.1-r24"
+            },
+            "require": {
+                "composer/installers": "~2.2",
+                "moodle/moodle": "v4.*"
+            },
+            "type": "moodle-theme"
+        },
+        {
+            "name": "moodle/moodle",
+            "version": "4.3.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://satis.middag.com.br/dist/moodle/moodle/moodle-moodle-4.3.0.zip",
+                "shasum": "477b20bef96572f2d84bcdb3ba1a3fe16ef29cb5"
+            },
+            "require": {
+                "composer/installers": "*"
+            },
+            "type": "library"
+        },
+        {
+            "name": "wikimedia/composer-merge-plugin",
+            "version": "v2.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/wikimedia/composer-merge-plugin.git",
+                "reference": "a03d426c8e9fb2c9c569d9deeb31a083292788bc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/wikimedia/composer-merge-plugin/zipball/a03d426c8e9fb2c9c569d9deeb31a083292788bc",
+                "reference": "a03d426c8e9fb2c9c569d9deeb31a083292788bc",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^1.1||^2.0",
+                "php": ">=7.2.0"
+            },
+            "require-dev": {
+                "composer/composer": "^1.1||^2.0",
+                "ext-json": "*",
+                "mediawiki/mediawiki-phan-config": "0.11.1",
+                "php-parallel-lint/php-parallel-lint": "~1.3.1",
+                "phpspec/prophecy": "~1.15.0",
+                "phpunit/phpunit": "^8.5||^9.0",
+                "squizlabs/php_codesniffer": "~3.7.1"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.x-dev"
+                },
+                "class": "Wikimedia\\Composer\\Merge\\V2\\MergePlugin"
+            },
+            "autoload": {
+                "psr-4": {
+                    "Wikimedia\\Composer\\Merge\\V2\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Bryan Davis",
+                    "email": "bd808@wikimedia.org"
+                }
+            ],
+            "description": "Composer plugin to merge multiple composer.json files",
+            "support": {
+                "issues": "https://github.com/wikimedia/composer-merge-plugin/issues",
+                "source": "https://github.com/wikimedia/composer-merge-plugin/tree/v2.1.0"
+            },
+            "time": "2023-04-15T19:07:00+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "alpha",
+    "stability-flags": {
+        "andrewhancox/file": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {
+        "composer-plugin-api": "^2"
+    },
+    "platform-dev": [],
+    "platform-overrides": {
+        "php": "8.2"
+    },
+    "plugin-api-version": "2.6.0"
+}
