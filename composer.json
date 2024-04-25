@@ -1,6 +1,7 @@
 {
     "name": "bytesparrow/moodle-mix",
     "description": "Using this custom Moodle installation you can combine various contents within Moodle.",
+    "version": "dev-main",
     "authors": [
         {
             "name": "Bernhard Strehl",
