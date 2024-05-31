@@ -10,16 +10,16 @@
             "role": "Developer"
         }],
     "repositories": [
-        {
+         {
             "type": "package",
             "package": {
                 "name": "moodle-an-hochschulen/boost_union",
                 "type": "moodle-theme",
-                "version": "v4.1.24",
+                "version": "v4.3.14",
                 "source": {
                     "url": "https://github.com/moodle-an-hochschulen/moodle-theme_boost_union.git",
                     "type": "git",
-                    "reference": "tags/v4.1-r24"
+                    "reference": "tags/v4.3-14"
                 },
                 "require": {
                     "composer/installers": "~2.2",
@@ -32,11 +32,11 @@
             "package": {
                 "name": "moodle-an-hochschulen/boost_union",
                 "type": "moodle-theme",
-                "version": "v4.3.14",
+                "version": "v4.1.24",
                 "source": {
                     "url": "https://github.com/moodle-an-hochschulen/moodle-theme_boost_union.git",
                     "type": "git",
-                    "reference": "tags/v4.3-14"
+                    "reference": "tags/v4.1-r24"
                 },
                 "require": {
                     "composer/installers": "~2.2",
