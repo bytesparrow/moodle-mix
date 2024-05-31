@@ -32,11 +32,11 @@
             "package": {
                 "name": "moodle-an-hochschulen/boost_union",
                 "type": "moodle-theme",
-                "version": "v4.3.11",
+                "version": "v4.3.14",
                 "source": {
                     "url": "https://github.com/moodle-an-hochschulen/moodle-theme_boost_union.git",
                     "type": "git",
-                    "reference": "tags/v4.3-r11"
+                    "reference": "tags/v4.3-14"
                 },
                 "require": {
                     "composer/installers": "~2.2",
@@ -104,7 +104,7 @@
 
     "require": {
         "adapta/modcustomfields": "6",
-        "moodle-an-hochschulen/boost_union": "v4.1.*",
+        "moodle-an-hochschulen/boost_union": "v4.3.*",
         "andrewhancox/file": "dev-composer-file",
         "bytesparrow/contentmodifier": "v1.*",
         "bytesparrow/h5peventsystem": "v1.*",
