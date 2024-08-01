@@ -15,28 +15,11 @@
             "package": {
                 "name": "moodle-an-hochschulen/boost_union",
                 "type": "moodle-theme",
-                "version": "v4.3.13",
+                "version": "v4.4.1",
                 "source": {
                     "url": "https://github.com/moodle-an-hochschulen/moodle-theme_boost_union.git",
                     "type": "git",
-                    "reference": "tags/v4.3-r13"
-                },
-                "require": {
-                    "composer/installers": "~2.2",
-                    "moodle/moodle": "v4.*"
-                }
-            }
-        },
-        {
-            "type": "package",
-            "package": {
-                "name": "moodle-an-hochschulen/boost_union",
-                "type": "moodle-theme",
-                "version": "v4.1.24",
-                "source": {
-                    "url": "https://github.com/moodle-an-hochschulen/moodle-theme_boost_union.git",
-                    "type": "git",
-                    "reference": "tags/v4.1-r24"
+                    "reference": "tags/v4.4-r1"
                 },
                 "require": {
                     "composer/installers": "~2.2",
@@ -104,7 +87,7 @@
 
     "require": {
         "adapta/modcustomfields": "6",
-        "moodle-an-hochschulen/boost_union": "v4.3.*",
+        "moodle-an-hochschulen/boost_union": "^v4.4",
         "andrewhancox/file": "dev-composer-file",
         "bytesparrow/contentmodifier": "v1.*",
         "bytesparrow/h5peventsystem": "v1.*",
