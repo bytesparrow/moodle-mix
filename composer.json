@@ -15,15 +15,15 @@
             "package": {
                 "name": "moodle-an-hochschulen/boost_union",
                 "type": "moodle-theme",
-                "version": "v4.4.1",
+                "version": "v4.5.4",
                 "source": {
                     "url": "https://github.com/moodle-an-hochschulen/moodle-theme_boost_union.git",
                     "type": "git",
-                    "reference": "tags/v4.4-r1"
+                    "reference": "tags/v4.5-r4"
                 },
                 "require": {
                     "composer/installers": "~2.2",
-                    "moodle/moodle": "v4.*"
+                    "moodle/moodle": "v4.5"
                 }
             }
         },
@@ -87,7 +87,7 @@
 
     "require": {
         "adapta/modcustomfields": "6",
-        "moodle-an-hochschulen/boost_union": "^v4.4",
+        "moodle-an-hochschulen/boost_union": "^v4.5",
         "andrewhancox/file": "dev-composer-file",
         "bytesparrow/contentmodifier": "v1.*",
         "bytesparrow/h5peventsystem": "v1.*",
