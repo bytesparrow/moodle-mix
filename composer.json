@@ -88,7 +88,7 @@
     "require": {
         "adapta/modcustomfields": "6",
         "moodle-an-hochschulen/boost_union": "^v4.5",
-        "andrewhancox/file": "dev-composer-file",
+        "andrewhancox/file": "dev-main_41",
         "bytesparrow/contentmodifier": "v1.*",
         "bytesparrow/h5peventsystem": "v1.*",
         "bytesparrow/moodle-composer-base": "v1.*",
