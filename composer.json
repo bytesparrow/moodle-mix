@@ -15,15 +15,15 @@
             "package": {
                 "name": "moodle-an-hochschulen/boost_union",
                 "type": "moodle-theme",
-                "version": "v4.5.4",
+                "version": "v4.5.16",
                 "source": {
                     "url": "https://github.com/moodle-an-hochschulen/moodle-theme_boost_union.git",
                     "type": "git",
-                    "reference": "tags/v4.5-r4"
+                    "reference": "tags/v4.5-r16"
                 },
                 "require": {
                     "composer/installers": "~2.2",
-                    "moodle/moodle": "v4.5"
+                    "moodle/moodle": "v4.*"
                 }
             }
         },
